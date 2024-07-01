@@ -13,10 +13,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::pluck('name', 'id')->all(); // pour la page menu.blade
-        $category = Category::all();                       // pour la page category.index
+        $category = Category::all();
         
-        return view('back.category.index', ['categories' => $categories, 'category' => $category]);
+        return view('back.category.index', ['category' => $category]);
     }
 
     /**
@@ -24,7 +23,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('back.category.create');
     }
 
     /**
@@ -32,7 +31,11 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required'
+        ]);
+
+        return redirect()->route('categories.index')->with('message', 'success');
     }
 
     /**
@@ -48,7 +51,9 @@ class CategoryController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $category = Category::find($id);
+        
+        return view('back.category.edt', ['category' => $category]);
     }
 
     /**
@@ -56,7 +61,10 @@ class CategoryController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'name' => 'required'
+        ]);
+        return redirect('admin/categories')->with('message', 'success');
     }
 
     /**
@@ -64,6 +72,10 @@ class CategoryController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $category = Category::find($id);
+
+        $category->delete();
+
+        return redirect()->route('categories.index')->with('message', 'success delete');
     }
 }

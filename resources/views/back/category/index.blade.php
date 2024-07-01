@@ -1,11 +1,11 @@
 @extends('back.layouts.master')
 @section('content')
 <div class="d-flex justify-content-end">
-    <a type="button" class="btn btn-primary my-3" href="#">Ajouter une Catégorie</a>
+    <a type="button" class="btn btn-primary my-3 shadow" href="#">Ajouter une Catégorie</a>
 </div>
 {{-- On inclut le fichier des messages retournés par les actions du contrôleurs CategoryController--}}
 @include('back.partials.flash')
-<table class="table table-striped">
+<table class="table table-striped shadow-sm">
     <thead>
         <tr>
             <th>Catégories</th>

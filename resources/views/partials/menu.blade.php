@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-white shadow-sm mt-1" style="border-bottom: 1px solid #66EB9A">
     <div class="container-fluid">
             
-            <a class="navbar-brand py-1 px-4 mx-5 fw-bold btn btn-outline-light" href="{{route('home')}}" style="color: #66EB9A;">{{config('app.name')}}</a>
+            <a class="navbar-brand py-1 px-4 mx-5 fw-bold btn btn-outline-light" href="{{route('home')}}" style="color: #66EB9A; text-shadow: 2px 2px rgba(0,0,0,0.1);">{{config('app.name')}}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

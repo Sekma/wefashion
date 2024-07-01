@@ -4,12 +4,12 @@
 <div class="container">
 
     <div class="d-flex justify-content-end">
-        <a type="button" class="btn btn-primary my-3" href="{{route('clothes.create')}}">Ajouter un produit</a>
+        <a type="button" class="btn btn-primary shadow my-3" href="{{route('clothes.create')}}">Ajouter un produit</a>
     </div>
 
 {{-- On inclut le fichier des messages retournés par les actions du contrôleurs ClothesController--}}
 @include('back.partials.flash')
-<table class="table table-striped">
+<table class="table table-striped shadow-sm">
     <thead>
         <tr class="text-center">
             <th>Produit</th>
