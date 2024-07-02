@@ -54,7 +54,7 @@ class ClothesController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'description' => 'required|string',
+            'description' => 'string|nullable',
             'category_id' => 'integer',
             'sizes.*' => 'integer', // pour vérifier un tableau d'entiers il faut mettre sizes.*
             'visibility' => 'in:published,unpublished',
@@ -127,7 +127,7 @@ class ClothesController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'description' => 'required|string',
+            'description' => 'string|nullable',
             'category_id' => 'integer',
             'sizes.*' => 'integer', // pour vérifier un tableau d'entiers il faut mettre size.*
             'visibility' => 'in:published,unpublished',
@@ -186,6 +186,13 @@ class ClothesController extends Controller
     {
         $article = Clothes::find($id);
 
+        // suppression de l'image si elle existe 
+        if(!empty($article->picture)){
+            Storage::disk('local')->delete($article->picture->link); // supprimer physiquement l'image
+            $article->picture()->delete(); // supprimer l'information en base de données
+        }
+
+        
         $article->delete();
 
         return redirect()->route('clothes.index')->with('message', 'success delete');

@@ -10,7 +10,7 @@
             <div class="navbar-nav">
                 <a class="nav-link fw-bold px-3 btn btn-outline-light" href="{{route('admin')}}">Admin</a>
                 <a class="nav-link fw-bold px-3 btn btn-outline-light" href="{{route('clothes.index')}}">PRODUITS</a>
-                <a class="nav-link fw-bold px-3 btn btn-outline-light" href="{{route('categories.index')}}">CATÉGORIES</a>
+                <a class="nav-link fw-bold px-3 btn btn-outline-light" href="{{route('category.index')}}">CATÉGORIES</a>
             </div>
         </div>
         <a class="btn btn-outline-success me-2" href="{{route('home')}}" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Voir</a>

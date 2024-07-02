@@ -30,7 +30,7 @@ Route::get('/admin', function () {
 Route::resource('admin/clothes', ClothesController::class)->middleware('auth');
 
 // partie admin - catégories
-Route::resource('admin/categories', CategoryController::class)->middleware('auth');
+Route::resource('admin/category', CategoryController::class)->middleware('auth');
 
 //******** partie public **********************
 

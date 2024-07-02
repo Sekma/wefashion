@@ -1,1 +1,1 @@
-<h1 class="navbar-brand  bg-body-tertiary p-2 rounded fw-bold" href="#" style="color: #66EB9A;">{{config('app.name')}}</h1>
+<h1 class="navbar-brand py-1 px-4 mx-5 fw-bold" style="color: #66EB9A; text-shadow: 2px 2px rgba(0,0,0,0.1);">{{config('app.name')}}</h1>

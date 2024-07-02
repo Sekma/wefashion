@@ -1,7 +1,7 @@
 @extends('back.layouts.master')
 @section('content')
 <div class="d-flex justify-content-end">
-    <a type="button" class="btn btn-primary my-3 shadow" href="#">Ajouter une Catégorie</a>
+    <a type="button" class="btn btn-primary my-3 shadow" href="{{route('category.create')}}">Ajouter une Catégorie</a>
 </div>
 {{-- On inclut le fichier des messages retournés par les actions du contrôleurs CategoryController--}}
 @include('back.partials.flash')
@@ -20,7 +20,7 @@
             <td>{{$category->name}}</td>
             <td>{{$category->created_at}}</td>
             <td>
-                <a class="text-decoration-none text-primary" href="#"><span class="fa fa-edit" aria-hidden="true"></span> edit</a>
+                <a class="text-decoration-none text-primary" href="{{route('category.edit', $category->id)}}"><span class="fa fa-edit" aria-hidden="true"></span> edit</a>
             </td>
             <td>
                 <!-- Button trigger modal -->
@@ -40,7 +40,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                         <!-- form destroy -->
-                        <form class="delete" method="POST" action="#">
+                        <form class="delete" method="POST" action="{{route('category.destroy', $category->id)}}">
                             @method('DELETE')
                             @csrf
                             <input class="btn btn-danger" type="submit" value="Delete" >

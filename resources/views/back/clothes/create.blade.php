@@ -14,7 +14,7 @@
                             <input type="text" name="name" value="" class="form-control" id="name" placeholder="Nom du produit" required>
                         </div>
                         <div class="form-group">
-                            <label for="price"><strong>Description :</strong></label>
+                            <label for="description"><strong>Description :</strong></label>
                             <textarea type="text" name="description"class="form-control"></textarea>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                 <input name="price" value="" class="form-control" id="price" type="number" placeholder="0.00 €" step="0.01" required>
             </div>
 
-            <button type="submit" class="btn btn-outline-primary mt-2">Créer</button>
+            <button type="submit" class="btn btn-outline-primary mt-2 shadow">Créer</button>
             </div><!-- #end col md 6 -->
         </div>
     </div>    

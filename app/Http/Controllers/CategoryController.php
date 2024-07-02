@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Clothes;
+use Illuminate\Support\Facades\Storage;
 
 class CategoryController extends Controller
 {
@@ -23,6 +25,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
+
         return view('back.category.create');
     }
 
@@ -35,7 +38,9 @@ class CategoryController extends Controller
             'name' => 'required'
         ]);
 
-        return redirect()->route('categories.index')->with('message', 'success');
+        Category::create($request->all());
+
+        return redirect()->route('category.index')->with('message', 'success');
     }
 
     /**
@@ -53,7 +58,7 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
         
-        return view('back.category.edt', ['category' => $category]);
+        return view('back.category.edit', ['category' => $category]);
     }
 
     /**
@@ -64,7 +69,12 @@ class CategoryController extends Controller
         $request->validate([
             'name' => 'required'
         ]);
-        return redirect('admin/categories')->with('message', 'success');
+
+        $category = Category::find($id);
+
+        $category->update($request->all());
+
+        return redirect('admin/category')->with('message', 'success');
     }
 
     /**
@@ -74,8 +84,19 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
 
+        $clothes = Clothes::all()->where('category_id', $id); // les article de la catégorie à supprimer
+        
+        foreach($clothes as $article){
+            // suppression de l'image si elle existe 
+            if(!empty($article->picture)){
+                Storage::disk('local')->delete($article->picture->link); // supprimer physiquement l'image
+                $article->picture()->delete(); // supprimer l'information en base de données
+            }
+        }
+        
+
         $category->delete();
 
-        return redirect()->route('categories.index')->with('message', 'success delete');
+        return redirect()->route('category.index')->with('message', 'success delete');
     }
 }

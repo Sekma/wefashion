@@ -80,7 +80,7 @@
                                     <p class="text-center my-5 text-danger">"Pas d'image"</p>
                                 @endif
                                 </div>
-                                <button type="submit" class="btn btn-outline-primary mt-4">Modifier</button>
+                                <button type="submit" class="btn btn-outline-primary mt-4 shadow">Modifier</button>
                             </div><!-- #end col md 6 -->
                         </div>
                     </div>
