@@ -1,7 +1,7 @@
 @extends('back.layouts.master')
 
 @section('content')
-<div class="row">
+<div class="row mt-4">
     <div class="col-md-6">
         <h5><strong>Réf</strong> : {{$article->reference}}.</h5>
         <h3><strong>Produit</strong> : {{$article->name}}.</h3>

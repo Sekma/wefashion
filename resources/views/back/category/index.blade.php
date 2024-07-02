@@ -35,7 +35,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Voulez-vous vraiment supprimer le produit: {{$category->name}} ?
+                        Voulez-vous vraiment supprimer la catégorie : {{$category->name}} ?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
