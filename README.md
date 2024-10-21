@@ -38,26 +38,26 @@ Pour accéder au partie Admin et modifier le contenu du boutique, vous devez vou
 
 ### Liste & Details (Articles)
 <div display:inline-block>
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-produits.jpeg" width="45%" alt="">
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-show-produit.jpeg" width="45%" align=right alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-produits.jpeg" width="50%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-show-produit.jpeg" width="50%" align=right alt="">
 </div><br><br>
 
 ## Create
 <div display:inline-block>
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-create-categorie.jpeg" width="45%" alt="">
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-create-produit.jpeg" width="45%" align=right alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-create-categorie.jpeg" width="50%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-create-produit.jpeg" width="50%" align=right alt="">
 </div><br><br>
 
 ## Edit
 <div display:inline-block>
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-edit-categorie.jpeg" width="45%" alt="">
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-edit-produit.jpeg" width="45%" align=right alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-edit-categorie.jpeg" width="50%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-edit-produit.jpeg" width="50%" align=right alt="">
 </div><br><br>
 
 ## Delete
 <div display:inline-block>
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-delete-categorie.jpeg" width="45%" alt="">
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-delete-produit.jpeg" width="45%" align=right alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-delete-categorie.jpeg" width="50%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-delete-produit.jpeg" width="50%" align=right alt="">
 </div><br><br>
 
 # Fabriqué avec
