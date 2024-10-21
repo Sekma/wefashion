@@ -16,25 +16,25 @@ We Fashion est une boutique en ligne dédiée à la vente de vêtements pour hom
 
 ## Page d'accueil
 La page d'accueil de cette application nous affiche la liste comptète des vêtements:<br><br>
-        <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/home.jpeg" width="45%" alt=""><br><br>
+        <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/home.jpeg" width="90%" alt=""><br><br>
 On cliquant sur un article, ça nous affiche tous les details sur l'article: Produit, Description, Prix, Taille....<br><br>
-        <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/show.jpeg" width="45%" alt=""><br><br>
+        <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/show.jpeg" width="90%" alt=""><br><br>
 ## Catégorie
 On peut afficher les articles par catégorie, en choisissant la catégorie et en cliquant dessus (dans la barre de navigation).<br><br>
-<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/homme.jpeg" width="45%" alt=""><br><br>
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/homme.jpeg" width="90%" alt=""><br><br>
 ## Auteur
 On peut aussi les afficher les articles en promotion, en cliquant dessus (dans la barre de navigation).<br><br>
-<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/soldes.jpeg" width="45%" alt=""><br><br>
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/soldes.jpeg" width="90%" alt=""><br><br>
 ## Partie Admin
 ### Login
 Pour accéder au partie Admin et modifier le contenu du boutique, vous devez vous connecter en ajoutant "/admin" dans l'url, et remplire les champs necessaire (email, password).<br>
-    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-login.jpeg" width="45%" alt=""><br><br>
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-login.jpeg" width="90%" alt=""><br><br>
 
 ## Accueil - Admin
-<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-welcome.jpeg" width="45%" alt="">
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-welcome.jpeg" width="90%" alt="">
     
 ### Liste (Catégories)
-<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-categorie.jpeg" width="45%" alt=""><br><br>
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-categorie.jpeg" width="90%" alt=""><br><br>
 
 ### Liste & Details (Articles)
 <div display:inline-block>
