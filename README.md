@@ -4,11 +4,9 @@ We Fashion est une boutique en ligne dédiée à la vente de vêtements pour hom
 
 ## ⚙️ Choix Technologiques
 
-- **Backend** :  
-  Structure MVC, ORM Eloquent, facilité de maintenance.
+- **Backend** Laravel : Structure MVC, ORM Eloquent, facilité de maintenance.
 
-- **Base de données** : 
-  Fiabilité et gestion efficace des données structurées.
+- **Base de données** MySQL : Fiabilité et gestion efficace des données structurées.
 
 - **Frontend** : Utilisation de librairies comme Bootstrap pour la mise en forme sans intégration de framework.
 
