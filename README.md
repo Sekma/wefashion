@@ -1,66 +1,75 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Présentation
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+We Fashion est une boutique en ligne dédiée à la vente de vêtements pour hommes et femmes.
 
-## About Laravel
+## ⚙️ Choix Technologiques
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Backend** :  
+  Structure MVC, ORM Eloquent, facilité de maintenance.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Base de données** : 
+  Fiabilité et gestion efficace des données structurées.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Frontend** : Utilisation de librairies comme Bootstrap pour la mise en forme sans intégration de framework.
 
-## Learning Laravel
+# 🎨 Wireframe de la Partie Front de l’Administration
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Page d'accueil
+La page d'accueil de cette application nous affiche la liste comptète des vêtements:<br><br>
+        <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/home.jpeg" width="45%" alt=""><br><br>
+On cliquant sur un article, ça nous affiche tous les details sur l'article: Produit, Description, Prix, Taille....<br><br>
+        <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/show.jpeg" width="45%" alt=""><br><br>
+## Catégorie
+On peut afficher les articles par catégorie, en choisissant la catégorie et en cliquant dessus (dans la barre de navigation).<br><br>
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/homme.jpeg" width="45%" alt=""><br><br>
+## Auteur
+On peut aussi les afficher les articles en promotion, en cliquant dessus (dans la barre de navigation).<br><br>
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/soldes.jpeg" width="45%" alt=""><br><br>
+## Partie Admin
+### Login
+Pour accéder au partie Admin et modifier le contenu du boutique, vous devez vous connecter en ajoutant "/admin" dans l'url, et remplire les champs necessaire (email, password).<br>
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-login.jpeg" width="45%" alt=""><br><br>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Accueil - Admin
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-welcome.jpeg" width="45%" alt="">
+    
+### Liste (Catégories)
+<img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-categorie.jpeg" width="45%" alt=""><br><br>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Liste & Details (Articles)
+<div display:inline-block>
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-produits.jpeg" width="45%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-show-produit.jpeg" width="45%" align=right alt="">
+</div><br><br>
 
-## Laravel Sponsors
+## Create
+<div display:inline-block>
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-create-categorie.jpeg" width="45%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-create-produit.jpeg" width="45%" align=right alt="">
+</div><br><br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Edit
+<div display:inline-block>
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-edit-categorie.jpeg" width="45%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-edit-produit.jpeg" width="45%" align=right alt="">
+</div><br><br>
 
-### Premium Partners
+## Delete
+<div display:inline-block>
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-delete-categorie.jpeg" width="45%" alt="">
+    <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/back-delete-produit.jpeg" width="45%" align=right alt="">
+</div><br><br>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+# Fabriqué avec
+<div style="display: inline_block"><br>
+  <img align="center" alt="Rafa-vscode" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg">
+  <img align="center" alt="Rafa-laravel" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg">
+  <img align="center" alt="Rafa-mysql" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+  <img align="center" alt="Rafa-php" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg">
+  <img align="center" alt="Rafa-Js" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+  <img align="center" alt="Rafa-Bootstrap" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+</div><br><hr>
 
-## Contributing
+# Auteur
+- Sekma Mohamed Hedi <a href="https://github.com/Sekma">@Sekma<a/>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
