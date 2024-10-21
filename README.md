@@ -1,4 +1,4 @@
-## Présentation
+## 🛍️ Présentation
 
 We Fashion est une boutique en ligne dédiée à la vente de vêtements pour hommes et femmes.
 
@@ -12,19 +12,22 @@ We Fashion est une boutique en ligne dédiée à la vente de vêtements pour hom
 
 - **Frontend** : Utilisation de librairies comme Bootstrap pour la mise en forme sans intégration de framework.
 
-# 🎨 Wireframe de la Partie Front de l’Administration
+## 🎨 Wireframe
 
 ## Page d'accueil
 La page d'accueil de cette application nous affiche la liste comptète des vêtements:<br><br>
         <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/home.jpeg" width="90%" alt=""><br><br>
 On cliquant sur un article, ça nous affiche tous les details sur l'article: Produit, Description, Prix, Taille....<br><br>
         <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/show.jpeg" width="90%" alt=""><br><br>
+        
 ## Catégorie
 On peut afficher les articles par catégorie, en choisissant la catégorie et en cliquant dessus (dans la barre de navigation).<br><br>
 <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/homme.jpeg" width="90%" alt=""><br><br>
-## Auteur
+
+## Sale
 On peut aussi les afficher les articles en promotion, en cliquant dessus (dans la barre de navigation).<br><br>
 <img src="https://github.com/Sekma/wefashion/blob/main/img_interface/soldes.jpeg" width="90%" alt=""><br><br>
+
 ## Partie Admin
 ### Login
 Pour accéder au partie Admin et modifier le contenu du boutique, vous devez vous connecter en ajoutant "/admin" dans l'url, et remplire les champs necessaire (email, password).<br>
